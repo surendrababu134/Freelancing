@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.selectWidth{
+  width: 30% !important;
+  display: inline-block;
+}
+
+.selectAddWidth{
+  width: 40%;
+  display: inline-block;
+  margin-left: 3%;
+}
