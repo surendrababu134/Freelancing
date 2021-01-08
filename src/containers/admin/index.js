@@ -76,7 +76,8 @@ const Admin = () => {
                         setMenuOpen(true)
                     }}
                     onBlur={()=>{
-                        setMenuOpen(false)
+                        setMenuOpen(false);
+                        setCount(1);
                     }}
                     onChange={(item) => {
                         handleChange(item);
