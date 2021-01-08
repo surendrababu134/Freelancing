@@ -83,7 +83,6 @@ const Admin = () => {
                         handleChange(item);
                     }}
                 /> : ""}
-
             </div>
             
             {history.location.pathname==="/user"?"":<div className="selectAddWidth">
