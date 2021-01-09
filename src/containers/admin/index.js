@@ -26,6 +26,10 @@ const Admin = () => {
     useEffect(() => {
         dispatch(getCountries());
     }, []);
+    /****************
+     * Fetching and filtering the data from the api.
+     * 
+     */
     const filteringData = (dateObject) =>{
         let newData = []
         if (dateObject.length > 5) {

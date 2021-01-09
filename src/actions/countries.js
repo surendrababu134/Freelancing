@@ -4,12 +4,21 @@ import * as urls from '../utility/api';
 import {url} from './index';
 import axios from 'axios';
 
-
+/**
+ * sending data to the reducer
+ * 
+ * 
+ */
 export function getCountriesData(data) {
     return {
         type: types.GET_COUNTRIES_LIST, data
     }
 }
+
+/**
+ * Fetch all countries
+ * 
+ */
 
 export const getCountries = () => async dispatch =>{
     try{
@@ -33,6 +42,11 @@ export const getCountries = () => async dispatch =>{
     }
 }
 
+
+/**
+ * Save the Country data in the db
+ * 
+ */
 export const postData = (data) => async dispatch =>{
     try{
         const requestUrl = `${url}${urls.POST_COUNTRY}`;
