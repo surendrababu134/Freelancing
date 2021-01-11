@@ -1,2 +1,2 @@
-export const GET_COUNTRIES_LIST = "/listcountries";
-export const POST_COUNTRY = "/add";
+export const GET_COUNTRIES_LIST = "/api/listcountries";
+export const POST_COUNTRY = "/api/add";

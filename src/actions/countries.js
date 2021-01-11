@@ -22,7 +22,7 @@ export function getCountriesData(data) {
 
 export const getCountries = () => async dispatch =>{
     try{
-        const requestUrl = `${url}${urls.GET_COUNTRIES_LIST}`;
+        const requestUrl = `${urls.GET_COUNTRIES_LIST}`;
         axios.get(requestUrl).then(res=>{
             console.log(res);
             if(res.status===200){
@@ -49,7 +49,7 @@ export const getCountries = () => async dispatch =>{
  */
 export const postData = (data) => async dispatch =>{
     try{
-        const requestUrl = `${url}${urls.POST_COUNTRY}`;
+        const requestUrl = `${urls.POST_COUNTRY}`;
         axios.post(requestUrl,{name:data}).then(res=>{
             console.log(res);
             dispatch(getCountries());
